@@ -35,6 +35,9 @@ public class ValidationResultWrapperJNI {
   public final static native long new_DetailedValidationResult__SWIG_1(String jarg1, long jarg2);
   public final static native void delete_DetailedValidationResult(long jarg1);
   public final static native long new_FieldsValidatorResult(long jarg1, long jarg2);
+  public final static native long FieldsValidatorResult_newFieldsUUID(long jarg1, FieldsValidatorResult jarg1_);
+  public final static native long FieldsValidatorResult_updatedFieldsUUID(long jarg1, FieldsValidatorResult jarg1_);
+  public final static native long FieldsValidatorResult_removedFieldsUUID(long jarg1, FieldsValidatorResult jarg1_);
   public final static native void delete_FieldsValidatorResult(long jarg1);
   public final static native long combine(long jarg1);
   public final static native long combineDetails(long jarg1);

@@ -40,4 +40,16 @@ public class FieldsValidatorResult extends ValidationResult {
     this(ValidationResultWrapperJNI.new_FieldsValidatorResult(SWIGTYPE_p_std__shared_ptrT_ValidationResult_t.getCPtr(validationResult), SWIGTYPE_p_std__shared_ptrT_FieldsChanges_t.getCPtr(fieldsChanges)), true);
   }
 
+  public SWIGTYPE_p_StringList newFieldsUUID() {
+    return new SWIGTYPE_p_StringList(ValidationResultWrapperJNI.FieldsValidatorResult_newFieldsUUID(swigCPtr, this), false);
+  }
+
+  public SWIGTYPE_p_StringList updatedFieldsUUID() {
+    return new SWIGTYPE_p_StringList(ValidationResultWrapperJNI.FieldsValidatorResult_updatedFieldsUUID(swigCPtr, this), false);
+  }
+
+  public SWIGTYPE_p_StringList removedFieldsUUID() {
+    return new SWIGTYPE_p_StringList(ValidationResultWrapperJNI.FieldsValidatorResult_removedFieldsUUID(swigCPtr, this), false);
+  }
+
 }
